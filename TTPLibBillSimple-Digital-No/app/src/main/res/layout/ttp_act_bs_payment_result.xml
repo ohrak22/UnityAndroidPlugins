@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ttp_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ttp_view_title_both" />
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ScrollView
+            android:id="@+id/ttp_sv_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/ttp_box" >
+
+                    <LinearLayout style="@style/ttp_box_row" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:layout_gravity="center"
+                            android:text="@string/ttp_field_cp_name" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_cp_name"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ttp_ll_item_name"
+                        style="@style/ttp_box_row"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:layout_gravity="center"
+                            android:text="@string/ttp_field_item_name" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_item_name"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ttp_ll_price"
+                        style="@style/ttp_box_row"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:layout_gravity="center"
+                            android:text="@string/ttp_field_price" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_price"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ttp_ll_app_pay"
+                        style="@style/ttp_box_row"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            android:id="@+id/ttp_tv_app_pay_crcy_name"
+                            style="@style/ttp_box_field"
+                            android:layout_width="115dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_app_pay_crcy_price"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ttp_box_row"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:layout_gravity="center"
+                            android:text="@string/ttp_field_payment_result" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_result_msg"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ttp_ll_reason"
+                        style="@style/ttp_box_row"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:text="@string/ttp_field_payment_reason" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_reason"
+                            style="@style/ttp_box_value"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal" >
+
+                    <LinearLayout
+                        style="@style/ttp_container_vertical"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:id="@+id/ttp_tv_guide_service"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/ttp_text"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_msg"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dip"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textColor="@color/ttp_text"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/ttp_tv_msg_kids"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dip"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/ttp_msg_kids_guide"
+                            android:textColor="@color/ttp_text"
+                            android:textSize="13sp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            style="@style/ttp_container_vertical"
+                            android:layout_marginTop="10dip" >
+
+                            <Button
+                                android:id="@+id/ttp_btn_pay_auth_link"
+                                style="@style/ttp_control_button_basic"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ttp_btn_pay_auth_link"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                style="@style/ttp_vspace"
+                                android:layout_height="10dp" />
+
+                            <Button
+                                android:id="@+id/ttp_btn_pay_gift_link"
+                                style="@style/ttp_control_button_basic"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/ttp_btn_pay_gift_link"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ttp_ll_receipt"
+                    style="@style/ttp_container_vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        style="@style/ttp_box"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            style="@style/ttp_box_field"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="@string/ttp_field_receipt" />
+
+                        <LinearLayout
+                            style="@style/ttp_vspace"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            android:id="@+id/ttp_ll_new_email"
+                            style="@style/ttp_container_vertical"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/ttp_et_new_email"
+                                style="@style/ttp_control_edittext_basic"
+                                android:layout_width="fill_parent"
+                                android:hint="@string/ttp_field_email"
+                                android:inputType="textEmailAddress" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ttp_ll_use_email"
+                            style="@style/ttp_container_vertical" >
+
+                            <Spinner
+                                android:id="@+id/ttp_sp_email"
+                                style="@style/ttp_control_spinner_small"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/ttp_vspace"
+                            android:layout_height="5dp" />
+
+                        <LinearLayout
+                            style="@style/ttp_container_horizontal"
+                            android:gravity="center_vertical" >
+
+                            <CheckBox
+                                android:id="@+id/ttp_cb_term_receipt"
+                                style="@style/ttp_control_checkbox_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dip"
+                                android:text="@string/ttp_field_receive_receipt"
+                                android:textColor="#000000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            style="@style/ttp_vspace"
+            android:layout_height="10dp" />
+
+        <LinearLayout style="@style/ttp_container_vertical" >
+
+            <TextView
+                android:id="@+id/ttp_tv_close"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/ttp_msg_pay_closing"
+                android:textColor="@color/ttp_text"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/ttp_btn_close"
+                style="@style/ttp_control_button_submit"
+                android:layout_width="fill_parent"
+                android:text="@string/ttp_btn_close" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ttp_bg_title"
+    android:baselineAligned="false"
+    android:id="@+id/ttp_ll_title"
+    android:layout_height="44dip"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:gravity="left|center_vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="90dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ttp_btn_title_left"
+            android:layout_marginLeft="5dip"
+            android:textSize="12sp"
+            style="@style/ttp_control_button_basic_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/ttp_tv_title_center"
+            style="@style/ttp_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="right|center_vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="90dip"
+        android:orientation="horizontal" >
+
+        <!--
+             <Button
+            android:id="@+id/ttp_btn_title_right"
+            android:layout_marginRight="5dip"
+            android:textSize="12sp"
+            style="@style/ttp_control_button_config" />
+        -->
+
+        <Button
+            android:background="@drawable/ttp_icon_config"
+            android:id="@+id/ttp_btn_title_right"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_width="wrap_content"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

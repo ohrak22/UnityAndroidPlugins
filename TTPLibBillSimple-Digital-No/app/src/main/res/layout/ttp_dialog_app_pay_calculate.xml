@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="350dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_pay_other"
+        style="@style/ttp_container_vertical"
+        android:baselineAligned="false" >
+
+        <LinearLayout
+            style="@style/ttp_vspace"
+            android:layout_height="5dp" />
+
+        <LinearLayout style="@style/ttp_container_horizontal" >
+
+            <Spinner
+                android:id="@+id/ttp_sp_currency"
+                style="@style/ttp_control_spinner_small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ttp_vspace"
+            android:layout_height="5dp" />
+
+        <LinearLayout style="@style/ttp_container_horizontal" >
+
+            <EditText
+                android:id="@+id/ttp_et_price"
+                style="@style/ttp_control_edittext_basic"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:hint="@string/ttp_field_item_calculate_amount"
+                android:inputType="number"
+                android:maxLength="7"/>
+
+            <Button
+                android:id="@+id/ttp_btn_price_calculate"
+                style="@style/ttp_control_button_basic"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:text="@string/ttp_btn_enter"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ttp_vspace"
+            android:layout_height="5dp" />
+
+        <LinearLayout style="@style/ttp_container_horizontal" >
+
+            <LinearLayout style="@style/ttp_box_row" >
+
+                <TextView
+                    android:id="@+id/ttp_tv_price_calculate"
+                    style="@style/ttp_box_value"
+                    android:gravity="right" />
+
+                <TextView
+                    android:id="@+id/ttp_tv_price_currency"
+                    style="@style/ttp_box_field"
+                    android:gravity="right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

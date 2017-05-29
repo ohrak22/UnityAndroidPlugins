@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ttp_bg_color">#EEEEEE</color>
+    <color name="ttp_orange">#E67323</color>
+    <color name="ttp_text">#535353</color>
+    <color name="ttp_alpha0">#00000000</color>
+    <color name="ttp_btn_gray2">#666666</color>
+</resources>

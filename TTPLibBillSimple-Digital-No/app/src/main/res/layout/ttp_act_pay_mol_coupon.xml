@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/ttp_bg_color"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ttp_view_title_left" />
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ScrollView
+            android:id="@+id/ttp_sv_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/ttp_container_horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false" >
+
+                    <LinearLayout
+                        style="@style/ttp_container_horizontal"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="10dip" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ttp_icon_calculator" />
+
+                        <LinearLayout
+                            style="@style/ttp_hspace"
+                            android:layout_width="5dp" />
+
+                        <Button
+                            android:id="@+id/ttp_btn_calculate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/ttp_bg_color"
+                            android:text="@string/ttp_btn_app_billing_calculate"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            style="@style/ttp_hspace"
+                            android:layout_width="5dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/ttp_bg_color"
+                            android:text="@string/ttp_btn_app_billing_Parentheses"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ttp_vspace"
+                    android:layout_height="5dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ttp_box"
+                    android:padding="20dip" >
+
+                    <TextView
+                        style="@style/ttp_box_field"
+                        android:layout_width="fill_parent"
+                        android:text="@string/ttp_field_phone" />
+
+                    <LinearLayout
+                        style="@style/ttp_container_vertical"
+                        android:layout_marginTop="5dp" >
+
+                        <EditText
+                            android:id="@+id/ttp_et_phone"
+                            style="@style/ttp_control_edittext_basic"
+                            android:layout_width="fill_parent"
+                            android:hint="@string/ttp_field_phone_hint"
+                            android:inputType="number"
+                            android:maxLength="13" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/ttp_container_vertical"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/ttp_tv_info1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/ttp_msg_app_billing_info"
+                        android:textColor="@color/ttp_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/ttp_tv_info2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:textColor="@color/ttp_text"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/ttp_tv_info3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/ttp_msg_app_billing_info3"
+                        android:textColor="@color/ttp_text"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/ttp_btn_pay"
+            style="@style/ttp_control_button_submit"
+            android:layout_width="fill_parent"
+            android:text="@string/ttp_btn_pay_app_billing" />
+    </LinearLayout>
+
+</LinearLayout>

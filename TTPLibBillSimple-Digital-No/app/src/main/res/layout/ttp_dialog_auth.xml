@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:padding="5dip"
+        android:text="@string/ttp_msg_register_auth"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:padding="5dip"
+        style="@style/ttp_container_horizontal" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="80dip"
+            android:text="@string/ttp_field_jumin"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:hint="@string/ttp_field_jumin_hint"
+            android:id="@+id/ttp_et_jumin"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:maxLength="13"
+            style="@style/ttp_control_edittext_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dip"
+        style="@style/ttp_container_horizontal" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="80dip"
+            android:text="@string/ttp_field_password"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:hint="@string/ttp_field_password_hint"
+            android:id="@+id/ttp_et_password"
+            android:inputType="number|textPassword"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:maxLength="4"
+            style="@style/ttp_control_edittext_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dip"
+        style="@style/ttp_container_horizontal" >
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="80dip"
+            android:text="@string/ttp_field_password_confirm"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:hint="@string/ttp_field_password_hint"
+            android:id="@+id/ttp_et_passwordc"
+            android:inputType="number|textPassword"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:maxLength="4"
+            style="@style/ttp_control_edittext_white" />
+    </LinearLayout>
+
+</LinearLayout>

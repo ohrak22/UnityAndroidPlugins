@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ttp_theme">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ttp_dialog_loading">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ttp_dialog_list" parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ttp_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@drawable/ttp_bg_box</item>
+    </style>
+
+    <style name="ttp_title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_vspace">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ttp_hspace">
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="ttp_line_basic">
+        <item name="android:background">@drawable/ttp_line_basic</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Container -->
+    <style name="ttp_container_horizontal">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_container_vertical">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Box -->
+    <style name="ttp_box">
+        <item name="android:background">@drawable/ttp_bg_box</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_box_row" parent="ttp_container_horizontal">
+        <item name="android:background">@drawable/ttp_bg_box_row</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+    </style>
+
+    <style name="ttp_box_line" parent="ttp_container_horizontal">
+        <item name="android:background">@drawable/ttp_line_basic</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="ttp_box_field">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#727272</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">85dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_box_value">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_box_other">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_box_popup_content">
+        <item name="android:background">@drawable/ttp_bg_box_pupup_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Recv -->
+    <style name="ttp_recv_field">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_recv_sub_row" parent="ttp_container_horizontal">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+    </style>
+
+    <style name="ttp_recv_field_sub">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_recv_icon">
+        <item name="android:layout_gravity">center_vertical|center_horizontal</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <!-- Controls -->
+
+
+    <!-- Button -->
+    <style name="ttp_control_button">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+    </style>
+
+    <style name="ttp_control_button_basic">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/ttp_control_button_basic</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+    </style>
+
+    <style name="ttp_control_button_cancel" parent="ttp_control_button_basic">
+        <item name="android:background">@drawable/ttp_control_button_cancel</item>
+    </style>
+    <style name="ttp_control_button_gray" parent="ttp_control_button_basic">
+        <item name="android:background">@drawable/ttp_control_button_gray</item>
+    </style>
+    <style name="ttp_control_button_gray2" parent="ttp_control_button_basic">
+        <item name="android:background">@drawable/ttp_control_button_gray2</item>
+    </style>
+
+    <style name="ttp_control_button_basic_small" parent="ttp_control_button_basic">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:background">@drawable/ttp_control_button_small</item>
+    </style>
+
+    <style name="ttp_control_button_submit">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/ttp_control_button_submit</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+    </style>
+
+    <style name="ttp_control_button_config">
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingLeft">5sp</item>
+        <item name="android:paddingRight">5sp</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:background">@drawable/ttp_control_button_config</item>
+    </style>
+
+    <!-- CheckBox -->
+    <style name="ttp_control_checkbox_medium">
+        <item name="android:button">@drawable/ttp_control_checkbox_medium</item>
+        <item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+    </style>
+
+    <style name="ttp_control_checkbox_onoff">
+        <item name="android:button">@drawable/ttp_control_checkbox_onoff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- EditText -->
+    <style name="ttp_control_edittext_basic">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">#A9A9A9</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/ttp_control_edittext_basic</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ttp_control_edittext_white">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/ttp_control_edittext_white</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="ttp_control_spinner_small">
+        <item name="android:background">@drawable/ttp_control_spinner_small</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

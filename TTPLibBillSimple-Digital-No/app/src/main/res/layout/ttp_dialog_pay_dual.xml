@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_pay_dual"
+        style="@style/ttp_container_vertical"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ttp_popup_btn_rollover" >
+
+            <TextView
+                android:id="@+id/ttp_tv_bill_google_top1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/ttp_btn_bill_ttp"
+                android:textColor="#f46700"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ttp_tv_bill_google_top1"
+                android:layout_below="@id/ttp_tv_bill_google_top1"
+                android:layout_marginTop="1dp"
+                android:text="@string/ttp_msg_bill_ttp"
+                android:textColor="#777777"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:contentDescription="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/ttp_icon_arrow" />
+
+            <TextView
+                android:id="@+id/ttp_tv_bill_ttp"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:contentDescription="@null"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/ttp_popup_line" />
+
+        <RelativeLayout
+            android:id="@+id/ttp_ly_btngooglewallet"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ttp_popup_btn_rollover" >
+
+            <TextView
+                android:id="@+id/ttp_tv_bill_google_top2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/ttp_btn_bill_google"
+                android:textColor="#4a981f"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/ttp_tv_bill_google_top2"
+                android:layout_below="@id/ttp_tv_bill_google_top2"
+                android:layout_marginTop="1dp"
+                android:text="@string/ttp_msg_bill_google"
+                android:textColor="#777777"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:contentDescription="@null"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/ttp_icon_arrow" />
+
+            <TextView
+                android:id="@+id/ttp_tv_bill_google"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

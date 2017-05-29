@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/ttp_container_horizontal" >
+
+        <EditText
+            android:hint="@string/ttp_field_kids_jumin_hint"
+            android:id="@+id/ttp_et_jumin"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:maxLength="6"
+            style="@style/ttp_control_edittext_white" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/ttp_bg_color"
+    android:baselineAligned="false"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_width="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ttp_ll_contents"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ScrollView
+                android:id="@+id/ttp_sv_contents"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:scrollbarDefaultDelayBeforeFade="1" >
+
+                <LinearLayout
+                    android:padding="10dip"
+                    style="@style/ttp_container_vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/ttp_ll_contents_list"
+                        style="@style/ttp_box" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <include layout="@layout/ttp_view_empty" />
+
+        <include layout="@layout/ttp_view_loading" />
+    </FrameLayout>
+
+</LinearLayout>

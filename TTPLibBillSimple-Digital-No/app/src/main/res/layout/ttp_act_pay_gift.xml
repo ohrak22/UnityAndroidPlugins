@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbarDefaultDelayBeforeFade="1" >
+
+    <LinearLayout
+        style="@style/ttp_container_vertical"
+        android:padding="10dip" >
+
+        <LinearLayout style="@style/ttp_container_vertical" >
+
+            <LinearLayout
+                android:id="@+id/ttp_gift_linearlayout_one"
+                style="@style/ttp_container_horizontal"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_culture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_culture"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    style="@style/ttp_container_horizontal"
+                    android:layout_width="5dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_happy"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ttp_gift_linearlayout_two"
+                style="@style/ttp_container_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_book"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    style="@style/ttp_container_horizontal"
+                    android:layout_width="5dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_teencash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_teencash"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ttp_gift_linearlayout_three"
+                style="@style/ttp_container_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_oncash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_oncash"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    style="@style/ttp_container_horizontal"
+                    android:layout_width="5dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_game"
+                    android:contentDescription="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ttp_gift_linearlayout_four"
+                style="@style/ttp_container_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_eggmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_eggmoney"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    style="@style/ttp_container_horizontal"
+                    android:layout_width="5dp"
+                    android:gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/ttp_gift_button_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_gift_button_eggmoney"
+                    android:contentDescription="@null"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

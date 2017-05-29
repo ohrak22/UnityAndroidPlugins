@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_pay_dual"
+        style="@style/ttp_container_vertical"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/ttp_container_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:baselineAligned="false" >
+
+            <TextView
+                android:id="@+id/ttp_tv_coupon_complete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:text="@string/ttp_msg_coupon_complete_ok"
+                android:textColor="@color/ttp_text"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

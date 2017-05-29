@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_pay_other"
+        style="@style/ttp_container_vertical"
+        android:baselineAligned="false" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/ttp_btn_pay_other_payment"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            style="@style/ttp_container_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false" >
+
+            <LinearLayout
+                android:id="@+id/ttp_ll_pay_gift"
+                style="@style/ttp_container_horizontal"
+                android:layout_width="0dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/ttp_tv_pay_gift"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_control_button_gray"
+                    android:gravity="center"
+                    android:text="@string/ttp_btn_pay_gift_link"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ttp_container_horizontal"
+                android:layout_width="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ttp_ll_pay_card"
+                style="@style/ttp_container_horizontal"
+                android:layout_width="0dip"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/ttp_tv_pay_card"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ttp_control_button_gray"
+                    android:gravity="center"
+                    android:text="@string/ttp_btn_pay_card_link"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ttp_line_basic" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ttp_container_horizontal"
+        android:layout_marginTop="10dip">
+
+        <Button
+            android:id="@+id/ttp_btn_request"
+            style="@style/ttp_control_button_basic"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:text="@string/ttp_btn_request_auth"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/ttp_et_authno"
+            style="@style/ttp_control_edittext_basic"
+            android:layout_width="0dip"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:hint="@string/ttp_field_authno"
+            android:inputType="number"
+            android:maxLength="6"
+            android:enabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ttp_container_horizontal"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ttp_msg_pay_confirm_sms"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

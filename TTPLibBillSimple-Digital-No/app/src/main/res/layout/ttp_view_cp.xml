@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ttp_box" >
+
+    <RelativeLayout
+        android:id="@+id/ttp_ll_cp_info_box"
+        style="@style/ttp_container_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            style="@style/ttp_box_row"
+            android:padding="0dp"
+            android:id="@+id/ttp_iv_cp_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@string/ttp_desc_cp" />
+
+        <TextView
+            android:id="@+id/ttp_tv_cp_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/ttp_btn_cp_info_more"
+            android:layout_toRightOf="@+id/ttp_iv_cp_logo"
+            android:maxLines="2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ttp_btn_cp_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ttp_icon_cp_more"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_cp_info"
+        style="@style/ttp_box_row"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/ttp_field_cp_introduce"
+            android:textColor="#6b6b6b" />
+
+        <TextView
+            android:id="@+id/ttp_tv_cp_introduce"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>

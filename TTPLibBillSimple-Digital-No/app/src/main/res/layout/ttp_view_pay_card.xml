@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ttp_ll_pay_card"
+    style="@style/ttp_container_vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        style="@style/ttp_vspace"
+        android:layout_height="10dip" />
+
+    <LinearLayout
+        style="@style/ttp_box"
+        android:padding="20dp" >
+
+        <TextView
+            style="@style/ttp_box_field"
+            android:layout_width="fill_parent"
+            android:text="@string/ttp_field_card_type_hint" />
+
+        <LinearLayout
+            style="@style/ttp_container_horizontal"
+            android:layout_marginTop="5dp" >
+
+            <Spinner
+                android:id="@+id/ttp_sp_card_provider"
+                style="@style/ttp_control_spinner_small"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ttp_vspace"
+        android:layout_height="10dip" />
+
+    <LinearLayout
+        android:id="@+id/ttp_ll_term"
+        style="@style/ttp_box"
+        android:padding="20dp" >
+
+        <LinearLayout
+            style="@style/ttp_container_horizontal"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/ttp_cb_term1"
+                style="@style/ttp_control_checkbox_medium" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:text="@string/ttp_msg_term1_agree"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/ttp_btn_detail1"
+                style="@style/ttp_control_button_basic_small"
+                android:layout_height="wrap_content"
+                android:text="@string/ttp_btn_view" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ttp_container_horizontal"
+            android:gravity="center_vertical" >
+
+            <CheckBox
+                android:id="@+id/ttp_cb_term2"
+                style="@style/ttp_control_checkbox_medium" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:text="@string/ttp_msg_term2_agree"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/ttp_btn_detail2"
+                style="@style/ttp_control_button_basic_small"
+                android:layout_height="wrap_content"
+                android:text="@string/ttp_btn_view" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ttp_container_vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:text="@string/ttp_msg_card_info"
+            android:textColor="@color/ttp_orange"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

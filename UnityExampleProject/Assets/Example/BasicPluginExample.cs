@@ -4,23 +4,60 @@ using System.Collections;
 
 public class BasicPluginExample : MonoBehaviour
 {
-	private static AndroidJavaClass javaClass;
-
 	public Text log;
+	AndroidJavaClass UnityPlayer;
+	AndroidJavaObject currentActivity;
 
-	void Start () {
+	void Start ()
+	{
+		UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		currentActivity = UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
 
-		javaClass = new AndroidJavaClass("com.john.basic.PluginClass");
-		AndroidJavaObject obj = new AndroidJavaObject("com.john.basic.PluginClass");
+		CallBasicClass();
 
-		javaClass.CallStatic("SetStaticInt", 10);
-		int num1 = javaClass.CallStatic<int>("GetStaticInt");
+		CallPluginClass();
+	}
 
-		obj.Call("SetInt", 20);
-		int num2 = obj.Call<int>("GetInt");
+	private void CallBasicClass()
+	{
+		// Call Static.
+		AndroidJavaClass PluginClass = new AndroidJavaClass("com.john.basicplugin.BasicClass");
+		PluginClass.CallStatic("SetIntStatic", 10);
+		int num = PluginClass.CallStatic<int>("GetIntStatic");
 
-		log.text = "CallStatic<int>: " + num1;
-		log.text += "\nobj.Call<int>: " + num2;
+		// Call.
+		AndroidJavaObject PluginObj = new AndroidJavaObject("com.john.basicplugin.BasicClass");
+		PluginObj.Call("SetString", "Test001");
+		string str = PluginObj.Call<string>("GetString");
+
+		log.text = num + "\n";
+		log.text += str + "\n";
+	}
+
+	private void CallPluginClass()
+	{
+		AndroidJavaClass PluginClass = new AndroidJavaClass("com.john.basicplugin.PluginClass");
+
+		currentActivity.Call("runOnUiThread", new AndroidJavaRunnable(() =>
+		{
+			PluginClass.CallStatic("ShowToast", currentActivity, "Toast Message");
+		}));
 
 	}
+
+	public void OnLaunchActivity()
+	{
+		currentActivity.Call("LaunchActivity");
+	}
+
+	public void OnLaunchActivityForResult()
+	{
+		currentActivity.Call("LaunchActivityForResult");
+	}
+
+	public void OnUnitySendMessage(string message)
+	{
+		log.text += message + "\n";
+	}
+
 }
