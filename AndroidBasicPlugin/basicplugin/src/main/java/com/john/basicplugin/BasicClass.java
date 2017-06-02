@@ -1,5 +1,7 @@
 package com.john.basicplugin;
 
+import com.unity3d.player.UnityPlayer;
+
 public class BasicClass {
 
     private static int g_num = 0;
@@ -21,4 +23,7 @@ public class BasicClass {
         return str;
     }
 
+    public void Call(){
+        UnityPlayer.UnitySendMessage("BasicExample", "OnUnitySendMessage", "Test UnitySendMessage");
+    }
 }

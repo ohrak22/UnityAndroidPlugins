@@ -9,6 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/basicplugin" />
+            <option value="$PROJECT_DIR$/overrideplugin" />
+            <option value="$PROJECT_DIR$/phoneplugin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -30,8 +30,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-
-
 android.libraryVariants.all { variant ->
     variant.outputs.each { output ->
         output.packageLibrary.exclude('libs/classes.jar')

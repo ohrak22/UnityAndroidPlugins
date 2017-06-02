@@ -1,1 +1,1 @@
-include ':basicplugin'
+include ':basicplugin', ':overrideplugin', ':phoneplugin'
