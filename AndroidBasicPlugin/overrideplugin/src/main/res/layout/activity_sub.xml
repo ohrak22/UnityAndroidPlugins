@@ -3,13 +3,12 @@
 android:orientation="vertical"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
-android:background="@android:color/background_light"
-android:id="@+id/activity_sub">
+android:background="@android:color/background_light">
 
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="Hello World"
+    android:text="@string/hello_world"
     android:textColor="@android:color/black"
     android:id="@+id/textView"/>
 

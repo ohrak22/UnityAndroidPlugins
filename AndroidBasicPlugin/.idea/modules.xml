@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidBasicPlugin.iml" filepath="$PROJECT_DIR$/AndroidBasicPlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UnityPlayerLibrary/UnityPlayerLibrary.iml" filepath="$PROJECT_DIR$/UnityPlayerLibrary/UnityPlayerLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/basicplugin/basicplugin.iml" filepath="$PROJECT_DIR$/basicplugin/basicplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/overrideplugin/overrideplugin.iml" filepath="$PROJECT_DIR$/overrideplugin/overrideplugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/phoneplugin/phoneplugin.iml" filepath="$PROJECT_DIR$/phoneplugin/phoneplugin.iml" />

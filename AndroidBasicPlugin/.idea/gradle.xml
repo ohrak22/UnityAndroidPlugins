@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/UnityPlayerLibrary" />
             <option value="$PROJECT_DIR$/basicplugin" />
             <option value="$PROJECT_DIR$/overrideplugin" />
             <option value="$PROJECT_DIR$/phoneplugin" />

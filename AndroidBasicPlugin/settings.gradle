@@ -1,1 +1,1 @@
-include ':basicplugin', ':overrideplugin', ':phoneplugin'
+include ':basicplugin', ':overrideplugin', ':phoneplugin', ':UnityPlayerLibrary'

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">OverridePlugin</string>
-    <string name="test_string">Test String</string>
+    <string name="hello_world">Hello World</string>
 
 </resources>
